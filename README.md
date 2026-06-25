@@ -50,16 +50,16 @@ Here is how data flows in LearnStack:
 ## 📁 Project Walkthrough (Where to look)
 
 ### The Backend (`/backend`)
-*   **[database.py](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/backend/database.py)**: Sets up the connection to the SQLite database. It creates the database session factory.
-*   **[models.py](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/backend/models.py)**: Defines what a "Flashcard" looks like in the database (columns like `front`, `back`, `review_count`).
-*   **[schemas.py](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/backend/schemas.py)**: Defines "Pydantic" models. These check that the frontend sends correct data formats and dictates how database items are sent back as JSON.
-*   **[main.py](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/backend/main.py)**: Contains our actual API endpoints (`GET`, `POST`, `PUT`, `DELETE`). This is where we receive HTTP requests, fetch database data, save changes, and return responses.
+*   **[database.py]: Sets up the connection to the SQLite database. It creates the database session factory.
+*   **[models.py]: Defines what a "Flashcard" looks like in the database (columns like `front`, `back`, `review_count`).
+*   **[schemas.py]: Defines "Pydantic" models. These check that the frontend sends correct data formats and dictates how database items are sent back as JSON.
+*   **[main.py]: Contains our actual API endpoints (`GET`, `POST`, `PUT`, `DELETE`). This is where we receive HTTP requests, fetch database data, save changes, and return responses.
 
 ### The Frontend (`/frontend`)
-*   **[index.html](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/frontend/index.html)**: The HTML entry page where our React app gets loaded.
-*   **[App.jsx](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/frontend/src/App.jsx)**: The heart of the frontend. It holds state (the current cards list) and handles operations like loading cards from the backend and updating the list.
-*   **[api.js](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/frontend/src/api.js)**: A helper file containing functions that use the browser's `fetch()` tool to make network requests to our backend.
-*   **[App.css](file:///C:/Users/aizan/.gemini/antigravity/scratch/fullstack-beginner-hub/frontend/src/App.css)**: Custom stylesheet with glassmorphic styles and 3D card rotation styles.
+*   **[index.html]: The HTML entry page where our React app gets loaded.
+*   **[App.jsx]**: The heart of the frontend. It holds state (the current cards list) and handles operations like loading cards from the backend and updating the list.
+*   **[api.js]: A helper file containing functions that use the browser's `fetch()` tool to make network requests to our backend.
+*   **[App.css]: Custom stylesheet with glassmorphic styles and 3D card rotation styles.
 *   **`/components`**: Reusable parts of our page (the interactive `Flashcard`, the statistics `Dashboard`, the creation `FlashcardForm`, and the deck list `CardManager`).
 
 ---
