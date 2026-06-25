@@ -1,0 +1,35 @@
+# Python Virtual Environments
+venv/
+.venv/
+ENV/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite Local Database Files
+backend/flashcards.db
+*.db
+*.sqlite3
+
+# Node Dependencies (Frontend)
+frontend/node_modules/
+
+# Vite production builds
+frontend/dist/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
